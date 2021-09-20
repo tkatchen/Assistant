@@ -7,8 +7,6 @@ for directory in os.walk("Audio"):
     # Ignore empties
     if directory[2] == []: continue
 
-    word = ""
-
     for fileName in directory[2]:
         # Open the wav file
         if fileName.split(".")[1] != "wav": continue
